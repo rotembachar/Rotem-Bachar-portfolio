@@ -228,11 +228,13 @@ p{ margin: 0 0 14px; color: var(--text); }
 .sunbeam__shots img{
   width: 100%;
   height: auto;
+  max-height: 340px;
   object-fit: contain;
   border-radius: 14px;
   border: 1px solid var(--border);
   box-shadow: var(--shadow);
   background: rgba(255,255,255,0.6);
+  padding: 10px;
 }
 
 .contact__grid{
