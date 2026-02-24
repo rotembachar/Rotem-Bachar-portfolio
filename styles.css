@@ -273,10 +273,11 @@ p{ margin: 0 0 14px; color: var(--text); }
   background: rgba(255,255,255,0.62);
 }
 .media-card img{
-  width:100%;
-  height: 260px;
+  width: 100%;
+  height: 320px;
   object-fit: cover;
-  display:block;
+  object-position: center;
+  display: block;
 }
 .media-card figcaption{
   padding: 10px 12px;
@@ -363,7 +364,10 @@ p{ margin: 0 0 14px; color: var(--text); }
   .explore{ grid-template-columns: 1fr; }
   .contact__grid{ grid-template-columns: 1fr; }
   .who{ grid-template-columns: 1fr; }
-  .media-card img{ height: 240px; }
+  .media-card img{
+    height: auto;
+    object-fit: contain;
+  }
   .sunbeam__shots img{ height: 220px; }
 }
 
