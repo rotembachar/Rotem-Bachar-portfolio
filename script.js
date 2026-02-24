@@ -40,7 +40,6 @@
 
       e.preventDefault();
       target.scrollIntoView({ behavior: "smooth", block: "start" });
-      history.replaceState(null, "", href);
     });
   });
 })();
