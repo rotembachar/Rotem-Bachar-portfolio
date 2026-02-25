@@ -395,3 +395,21 @@ p{ margin: 0 0 14px; color: var(--text); }
   font-weight: 550;
   margin: 0 0 14px;
 }
+
+.highlight{
+  color: var(--rose);
+  font-weight: 600;
+  position: relative;
+}
+
+.highlight::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 6px;
+  background: rgba(224,21,114,0.18);
+  z-index: -1;
+  border-radius: 4px;
+}
