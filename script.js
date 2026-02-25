@@ -1,3 +1,17 @@
+// Always start at the top on refresh (and avoid hash jump)
+if ("scrollRestoration" in history) {
+  history.scrollRestoration = "manual";
+}
+
+window.addEventListener("load", () => {
+  window.scrollTo(0, 0);
+
+  // Remove #hash from URL so refresh won't jump down again
+  if (window.location.hash) {
+    history.replaceState(null, "", window.location.pathname + window.location.search);
+  }
+});
+
 (function () {
   // Footer year
   const yearEl = document.getElementById("year");
